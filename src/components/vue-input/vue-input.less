@@ -1,0 +1,27 @@
+.vue-input {
+    display: flex;
+    flex-direction: column;
+    &__label {
+        margin-bottom: 7px;
+
+    }
+    &__input {
+        box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
+        background: #FFFFFF;
+        border: 1px solid #DBE2EA;
+        border-radius: 6px;
+        min-height: 52px;
+        padding: 16px;
+        outline: #0880AE;
+        &::placeholder {
+            color: #7C9CBF;
+        }
+        &:active {
+           border: 2px solid #0880AE;
+        }
+        &:focus {
+             border: 2px solid #0880AE;
+        }
+
+    }
+}               
