@@ -1,0 +1,58 @@
+.vue-button {
+  background: #0880ae;
+  box-shadow: 0px 2px 4px rgba(44, 39, 56, 0.08),
+    0px 4px 8px rgba(44, 39, 56, 0.08);
+  border-radius: 6px;
+  text-align: center;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  border: 0;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0px 12px 24px rgba(44, 39, 56, 0.08),
+      0px 24px 48px rgba(44, 39, 56, 0.16);
+  }
+  &:active {
+    box-shadow: 0 0 0 2px #2c2738;
+    border-radius: 2px;
+    transition: ease-in;
+    transform: translateY(5px);
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px #2c2738;
+    border-radius: 2px;
+    transition: ease-in;
+    transform: translateY(5px);
+  }
+  &__text {
+    color: #ebf4f8;
+    font-weight: 500;
+  }
+  &_disable {
+    background: #dbe2ea;
+    box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.08);
+    cursor: initial;
+    outline: none;
+    &:hover {
+      box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.08);
+    }
+    &:active {
+      box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.08);
+      border-radius: 6px;
+      transition: none;
+      transform: translateY(0px);
+    }
+    &:focus {
+      box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.08);
+      border-radius: 6px;
+      transition: none;
+      transform: translateY(0px);
+    }
+    & span {
+      color: #2c2738;
+      mix-blend-mode: normal;
+      opacity: 0.5;
+    }
+  }
+}

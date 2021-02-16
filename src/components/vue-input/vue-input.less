@@ -1,27 +1,112 @@
+@supports (-webkit-appearance: none) or (-moz-appearance: none) {
+  input[type="checkbox"],
+  input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+}
+
 .vue-input {
+  display: flex;
+  flex-direction: column;
+  min-height: 84px;
+  &__label {
+    margin-bottom: 7px;
+    font-weight: 500;
+    color: #756f86;
+  }
+  &-rules-link {
+    color: #0880ae;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  &__input {
+    &-bg-basis {
+      box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
+      background: #ffffff;
+      border: 1px solid #dbe2ea;
+      border-radius: 6px;
+    }
+    &-l-basis {
+      max-width: 400px;
+      width: 100%;
+      min-height: 54px;
+      outline: none;
+      padding: 16px;
+      margin-bottom: 8px;
+    }
+    &::placeholder {
+      color: #7c9cbf;
+    }
+    &:active {
+      display: inline-block;
+      box-shadow: 0 0 0 2px #0880ae;
+      border-radius: 2px;
+    }
+    &:focus {
+      display: inline-block;
+      box-shadow: 0 0 0 2px #0880ae;
+      border-radius: 2px;
+    }
+  }
+  &__error {
+    color: #ff7171;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  &-check {
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 8px;
+    // &__label {
+    //   margin-bottom: 0;
+    // }
+    &__checkbox {
+      z-index: 1;
+      width: 28px;
+      height: 28px;
+      outline: none;
+      display: inline-block;
+      vertical-align: top;
+      position: relative;
+      margin: 0;
+      margin-bottom: 8px;
+      cursor: pointer;
+      margin-right: 8px;
+      transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
+      &:checked {
+        box-shadow: 0 0 0 2px #0880ae;
+        border-radius: 2px;
+        &::after {
+          content: "";
+          display: block;
+          left: 0;
+          top: 0;
+          position: absolute;
+          width: 7px;
+          height: 14px;
+          border: 2px solid #0880ae;
+          border-top: 0;
+          border-left: 0;
+          left: 9px;
+          top: 4px;
+          transform: rotate(37deg);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .vue-input-rules-link {
+    font-size: 13px;
+  }
+  .vue-input-check {
     &__label {
-        margin-bottom: 7px;
-
+      font-size: 13px;
     }
-    &__input {
-        box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
-        background: #FFFFFF;
-        border: 1px solid #DBE2EA;
-        border-radius: 6px;
-        min-height: 52px;
-        padding: 16px;
-        outline: #0880AE;
-        &::placeholder {
-            color: #7C9CBF;
-        }
-        &:active {
-           border: 2px solid #0880AE;
-        }
-        &:focus {
-             border: 2px solid #0880AE;
-        }
-
-    }
-}               
+  }
+}

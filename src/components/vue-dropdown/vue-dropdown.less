@@ -1,0 +1,47 @@
+.vue-dropdown {
+  &__label {
+  }
+  &__dropdown {
+    position: relative;
+    &-control {
+      margin-top: 7px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      &:active {
+        box-shadow: 0 0 0 2px #0880ae;
+        border-radius: 2px;
+      }
+      &:focus {
+        box-shadow: 0 0 0 2px #0880ae;
+        border-radius: 2px;
+      }
+    }
+    &-text {
+      color: #7c9cbf;
+      &_current {
+        color: #2c2738;
+      }
+    }
+    &-list {
+      z-index: 10;
+      position: absolute;
+      max-width: 400px;
+      width: 100%;
+      flex-direction: column;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    &-item {
+      max-width: 400px;
+      width: 100%;
+      color: #756f86;
+      cursor: pointer;
+      padding: 12px;
+      &:hover {
+        background: #ebf4f8;
+      }
+    }
+  }
+}
