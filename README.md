@@ -65,7 +65,7 @@ $ npm run lint # lint check runs
 
 ## :eyes: Original design
 
-[Design in figma](https://www.figma.com/file/wWUnQwvRDWBfPx1v1pCAfO/React-Pizza?node-id=0%3A1)
+[Design in figma](https://www.figma.com/file/W03pATu7O2YIYhw0gq4nsH/Vue-JS)
 
 ---
 
