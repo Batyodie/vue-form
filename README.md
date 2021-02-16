@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="vue-form" src="https://res.cloudinary.com/pizza-vue/image/upload/v1613464358/Screenshot_5_wtztha.png" />
+   Vue form registration component
 </h1>
 
 <h4 align="center">
