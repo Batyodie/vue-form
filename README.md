@@ -21,6 +21,7 @@
 <img alt="vue-form" src="https://res.cloudinary.com/pizza-vue/image/upload/v1613464449/7_sygaar.png" />
 <img alt="vue-form" src="https://res.cloudinary.com/pizza-vue/image/upload/v1613464475/8_fxeljw.png" />
 </p>
+
 ## :rocket: Technologies
 
 This project was developed using the following technologies:
