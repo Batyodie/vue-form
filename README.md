@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Vue Pizza" src="https://prnt.sc/zpdrv8" />
+    <img alt="Vue Pizza" src="https://res.cloudinary.com/pizza-vue/image/upload/v1613464358/Screenshot_5_wtztha.png" />
 </h1>
 
 <h4 align="center">
@@ -16,9 +16,9 @@
   <a href="https://vue-form-roan.vercel.app/">Preview</a>
 </p>
 
-![App Screenshot](https://prnt.sc/zpdzyq)
-![App Screenshot](https://prnt.sc/zpe5mm)
-![App Screenshot](https://prnt.sc/zpe9uo)
+![App Screenshot](https://res.cloudinary.com/pizza-vue/image/upload/v1613464417/6_zmjwxg.png)
+![App Screenshot](https://res.cloudinary.com/pizza-vue/image/upload/v1613464449/7_sygaar.png)
+![App Screenshot](https://res.cloudinary.com/pizza-vue/image/upload/v1613464475/8_fxeljw.png)
 
 ## :rocket: Technologies
 
